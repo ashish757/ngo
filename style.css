@@ -82,7 +82,7 @@ nav .navbar .links li a{
 nav .navbar .links li a:hover {
   color: rgb(128, 128, 128);
 }
-.links li:hover > .arrow{
+.links li.submenu-active > .arrow{
   transform: rotate(180deg);
   }
 
@@ -101,7 +101,7 @@ nav .navbar .links li .sub-menu{
   display: none;
   z-index: 2;
 }
-nav .navbar .links li:hover > .sub-menu{
+nav .navbar .links li.submenu-active > .sub-menu{
   display: block;
 }
 .navbar .links li .sub-menu li{
