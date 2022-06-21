@@ -1,0 +1,12 @@
+footer {
+    padding: 4rem 7rem;
+    margin-top: auto;
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
