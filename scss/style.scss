@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+  
+main {
+    padding: 3rem 7rem;
+    margin: 1rem 1rem;
+}
+.mainHeading {
+    display: inline-block;
+    color: rgb(119, 119, 119);
+    margin: 1rem 0rem 1rem 1rem;
+}
+  
