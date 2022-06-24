@@ -1,0 +1,63 @@
+.associates {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-gap:2rem;
+    }
+    .card {
+        padding: 2rem 2rem;
+        border-radius: .2rem;
+        background-color: rgb(183, 165, 202);
+        box-shadow: 0px 1px 2px 1px rgb(116, 113, 150); 
+        animation: card 4s linear infinite;
+        .img {
+            height: 10rem;
+            width: 10rem;
+            border-radius: 50%;
+            overflow: hidden;
+            img{
+                height: 10rem;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@keyframes card {
+    0% {
+        background-color: #cdbdbd;
+    }
+    10% {
+        background-color: #cdbdc8;
+    }
+    20% {
+        background-color: #c9bdcd;
+    }
+    30% {
+        background-color: #c2bdcd;
+    }
+    40% {
+        background-color: #bdc2cd;
+    }
+    40% {
+        background-color: #bdc6cd;
+    }
+    50% {
+        background-color: #bdcdc8;
+    }
+    60% {
+        background-color: #bdcdc0;
+    }
+    70% {
+        background-color: #c6cdbd;
+    }
+    80% {
+        background-color: #cdc8bd;
+    }
+    90% {
+        background-color: #c7b8b4;
+    }
+    100% {
+        background-color: #c7b4b4;
+    }
+}
