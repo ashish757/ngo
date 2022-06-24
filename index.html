@@ -34,8 +34,8 @@
 						</svg>
 					</div>
 
-					<li><a href="/">HOME</a></li>
-					<li><a href="/">COMPLAINT</a></li>
+					<li><a href="#">HOME</a></li>
+					<li><a href="/complaint.html">COMPLAINT</a></li>
 
 					<!-- <li class='has-submenu'>
 						<a href="#">HTML & CSS</a>
@@ -78,8 +78,8 @@
 						</ul>
 					</li> -->
 
-					<li><a href="./aboutUs.html">ABOUT US</a></li>
-					<li><a href="#">CONTACT US</a></li>
+					<li><a href="#aboutUs">ABOUT US</a></li>
+					<li><a href="#contactUs">CONTACT US</a></li>
 				</ul>
 			</div>
 		</div>
@@ -111,8 +111,9 @@
 	
 	<div class="divider"></div>
 
-		<div class="about container ">
+		<div id="aboutUs" class="container">
 			<div class="heading">
+				<h3>About Us</h3>
 				<h1>What We Do.</h1>
 			</div>
 			<p class="work">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas architecto itaque neque explicabo aliquam. Commodi facere sit laudantium! Facilis, quae similique necessitatibus voluptatem nulla harum numquam nesciunt aliquam fugiat sequi.</p>
@@ -121,7 +122,7 @@
 
 		<div class="associates container">
 			<div class="heading">
-				<h1>Associates.</h1>
+				<h1>Meet Our Team.</h1>
 			</div>
 			<div class="cards">
 				<div class="card">
@@ -157,7 +158,7 @@
 
 		<div class="divider"></div>
 
-		<div class="contactUs">
+		<div id="contactUs">
 			<div class="heading">
 				<h1>Contact Us.</h1>
 			</div>
@@ -166,40 +167,46 @@
 			
 				  <div class="details">
 					<div class="detail">
-					  <i class="fas fa-map-marker-alt"></i>
-					  <p class="field">Address</p>
-					  <p>Surkhet, NP12</p>
-					  <p>Birendranagar 06</p>
-					</div>
-					<div class="detail">
 					  <i class="fas fa-phone-alt"></i>
-					  <p class="field">Phone</p>
+					  <h2 class="field">Phone</h2>
 					  <p>+0098 9893 5647</p>
 					  <p>+0096 3434 5678</p>
 					</div>
 					<div class="detail">
 					  <i class="fas fa-envelope"></i>
-					  <p class="field">Email</p>
+					  <h2 class="field">Email</h2>
 					  <p>code@gmail.com</p>
 					  <p>info.code@gmail.com</p>
 					</div>
+					<div class="detail">
+						<i class="fas fa-map-marker-alt"></i>
+						<h2 class="field">Address</h2>
+						<p>Surkhet, NP12</p>
+						<p>Birendranagar 06</p>
+					  </div>
 				  </div>
 
 				  <div class="contact-form">
 					<p class="contact-title">Send us a message</p>
 					<p class="contact-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim consectetur et unde quis ipsum velit est, itaque quidem, quo repellat </p>
 				  <form >
-					<div class="input-box">
-					  <input type="text" placeholder="Enter your name">
+					<div class="left">
+						
+						<div class="input-box">
+							<input type="text" placeholder="Enter your name">
+						</div>
+						<div class="input-box">
+							<input type="text" placeholder="Enter your email">
+						</div>
 					</div>
-					<div class="input-box">
-					  <input type="text" placeholder="Enter your email">
-					</div>
-					<div class="input-box message-box">
-					  <textarea placeholder="Enter your message"></textarea>
-					</div>
-					<div class="button">
-					  <button>Send now</button>
+					<div class="right">
+
+						<div class="input-box message-box">
+							<textarea placeholder="Enter your message"></textarea>
+						</div>
+						<div class="button">
+							<button>Send now</button>
+						</div>
 					</div>
 				  </form>
 				</div>

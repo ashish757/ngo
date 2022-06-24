@@ -10,20 +10,20 @@
         justify-content: center;
     }
     .card {
+        border: 1px solid #9b9b9b26;
+        box-shadow: 0px 1px 8px 0px #cbcbcb9e;
         padding: 2rem 2rem;
         border-radius: .2rem;
-        // background:linear-gradient(180deg, #E3E3E3 0%,#babfc5 100%);
         transition: box-shadow .2s ease;
-        // animation: card 7s linear infinite;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         p {
-            margin: .5rem 0rem;
+            margin: 1rem 0rem;
             font-size: 1.4rem;
             font-weight: 600;
-        color: #27135c;
+            color: #27135c;
         }
 
         // &:nth-child(even) {
@@ -43,6 +43,7 @@
                 width: 10rem;
                 border-radius: 50%;
                 border: 5px solid #fff;
+                transition: transform .3s ease;
             }
         }
 
@@ -68,46 +69,10 @@
         }
         &:hover {
             box-shadow: 2px 8px 11px 0px #cbcbcb;
-
+            
         }
-    }
-}
-
-@keyframes card {
-    0% {
-        background-color: #cdbdbd81;
-    }
-    10% {
-        background-color: #cdbdc880;
-    }
-    20% {
-        background-color: #c9bdcd80;
-    }
-    30% {
-        background-color: #c2bdcd80;
-    }
-    40% {
-        background-color: #bdc2cd80;
-    }
-    40% {
-        background-color: #bdc6cd80;
-    }
-    50% {
-        background-color: #bdcdc880;
-    }
-    60% {
-        background-color: #bdcdc080;
-    }
-    70% {
-        background-color: #c6cdbd80;
-    }
-    80% {
-        background-color: #cdc8bd80;
-    }
-    90% {
-        background-color: #c7b8b480;
-    }
-    100% {
-        background-color: #d3c0c080;
+        &:hover img {
+            transform: translate(.7rem, .7rem);
+        }
     }
 }
