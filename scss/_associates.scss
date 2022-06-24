@@ -1,44 +1,74 @@
+@import "./vars";
+
 .associates {
-    margin: 0px auto 3rem auto;
+    margin: 0px 0 3rem 0;
     
     .cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
-        grid-gap: 2rem;
+        grid-gap: 3rem;
         justify-content: center;
     }
     .card {
         padding: 2rem 2rem;
         border-radius: .2rem;
-        background:linear-gradient(180deg, #E3E3E3 0%,#babfc5 100%);
-
+        // background:linear-gradient(180deg, #E3E3E3 0%,#babfc5 100%);
+        transition: box-shadow .2s ease;
         // animation: card 7s linear infinite;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-
-        &:nth-child(even) {
-            background:linear-gradient(0deg, #E3E3E3 0%,#bcc1c7 100%);
+        p {
+            margin: .5rem 0rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+        color: #27135c;
         }
+
+        // &:nth-child(even) {
+        //     background:linear-gradient(0deg, #E3E3E3 0%,#bcc1c7 100%);
+        // }
 
         .img {
-            height: 10rem;
-            width: 10rem;
             border-radius: 50%;
-            overflow: hidden;
+            background: $primaryLight;
+            padding: 0.3rem;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
             img{
                 height: 10rem;
-                max-width: 100%;
+                width: 10rem;
+                border-radius: 50%;
+                border: 5px solid #fff;
             }
         }
+
         button {
             border: none;
             outline: none;
             padding: .5rem 1rem;
             font-size: 1.05rem;
             color: #fff;
-            background-color: #00000080;
+            background-color: $primaryDark;
+            border-radius: .3rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(1rem);
+            transition: opacity, transform, .2s ease-in-out;
+            transition: opacity, -webkit-transform, .2s ease-in-out;
+            cursor: pointer;
+        }
+        &:hover button {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0rem);
+        }
+        &:hover {
+            box-shadow: 2px 8px 11px 0px #cbcbcb;
+
         }
     }
 }

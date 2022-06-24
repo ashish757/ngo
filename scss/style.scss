@@ -2,6 +2,10 @@
 @import "./hero";
 @import "./footer";
 @import "./associates";
+@import "./about";
+@import "./vars";
+@import "./contact";
+
 
 * {
   margin: 0;
@@ -18,19 +22,31 @@ body {
 
 .content {
   padding: 3rem 7rem;
-  margin: 1rem 1rem;
-  .mainHeading {
-    font-size: 1.6rem;
-    display: inline-block;
-    color: rgb(119, 119, 119);
-    margin: 1rem 0rem 1rem 1rem;
-    overflow-wrap: anywhere;
-  }
+
   article {
+    color: $primary;
     font-size: 1.1rem;
   }
 }
 
 .associates {
   padding: 0rem 4rem;
+}
+
+.heading {
+  font-size: 1.6rem;
+  margin: 1rem 0rem 2rem 1rem;
+  overflow-wrap: anywhere;
+  h1 {
+    color: #8d6ee5;
+    text-align: center;
+  }
+}
+.container {
+  padding: 4rem 10%;
+}
+
+div.divider {
+  height: 0px;
+  border-bottom: 1px solid #dbdbdb;
 }
