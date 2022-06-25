@@ -2,7 +2,6 @@
 
 #contactUs {
   color: #fff;
-  padding: 2rem 6rem;
   background-image: url("../img/map.png");
   background-size: cover;
   height: 100vh;
@@ -24,7 +23,7 @@
   .contact {
     margin-top: 8rem;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 4rem;
   }
 }
@@ -36,27 +35,30 @@
   align-items: center;
   justify-content: center;
   border-right: 2px solid #afafb6;
+  max-width: 85%;
+
+  .detail{
+    text-align: center;
+    padding: 1rem; 
+    svg{
+      height: 1.8rem;
+      width: 1.8rem;
+      margin-bottom: .6rem;
+      color: #ececec;
+    }
+    .field{
+      font-weight: 500;
+      color: #fff;
+    }
+    & > p:not(.field) {
+      font-size: 1rem;
+      color: #e1e1e1;
+    }
+  }
 }
 
-.details .detail{
-  text-align: center;
-  margin: 1rem 0rem;
-}
-.details .detail i{
-  font-size: 30px;
-  color: #3e2093;
-  margin-bottom: 10px;
-}
-.details .detail .field{
-  font-weight: 500;
-  color: #e5e5e5;
-}
 
 
-.details .detail > p:not(.field) {
-  font-size: 1rem;
-  color: #cecece;
-}
  .contact-form {
 
   .contact-title{
@@ -67,24 +69,26 @@
   .contact-text{
     color:  #d9cff7;
   }
+  .input-box{
+    height: 4rem;
+    margin: 2.1rem 0;
+
+    input, textarea{
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      background: #363636;
+      color: #fff;
+      border-radius: 6px;
+      padding: 0 15px;
+      resize: none;
+    }
+  }
 }
-.contact-form .input-box{
-  height: 4rem;
-  margin: 2.1rem 0;
-}
-.contact-form .input-box input,
-.contact-form .input-box textarea{
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  background: #363636;
-  color: #fff;
-  border-radius: 6px;
-  padding: 0 15px;
-  resize: none;
-}
+
+
 .contact-form .message-box{
   min-height: 11rem;
   textarea {
@@ -122,6 +126,8 @@
   }
 }
 
+
+
 @media (max-width: 820px) {
 
    .details{
@@ -129,8 +135,27 @@
    justify-content: center;
    flex-wrap: wrap;
    border: none;
+   max-width: 100%;
+ }
+
+ #contactUs {
+  .contact {
+    grid-template-columns: 1fr;
+  }
  }
 }
+
+
+@media (max-width: 550px) {
+
+  .contact-form form {
+    flex-direction: column;
+    gap: 0rem;
+  }
+}
+
+
+
 
 
 
