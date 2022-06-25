@@ -22,7 +22,7 @@ nav .navbar {
 
 .navbar .logo a {
   font-size: 30px;
-  color: rgb(68, 68, 68);
+  color: #fff; 
   text-decoration: none;
   font-weight: 600;
 }
@@ -92,6 +92,7 @@ nav .navbar .links li a:hover {
   }
   nav .navbar .links li a {
     font-size: 15px;
+    color: #363636;
   }
 }
 
@@ -109,7 +110,7 @@ nav .navbar .links li a:hover {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0;  
     display: none;
     background: #f1f1f1;
     padding: 20px;

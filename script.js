@@ -24,6 +24,7 @@ Array.from(hasSubMenus).forEach((li) => {
 });
 
 const parallax = document.querySelector(".parallax");
+const cards = Array.from(document.querySelectorAll(".associates .cards .card"));
 
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
@@ -31,4 +32,22 @@ window.addEventListener("scroll", function () {
     (offset - parallax.offsetTop) * 0.5 + "px";
   // console.log("Parallax : " + parallax.offsetTop + " / Window: " + offset);
   // console.log("real : " + (offset - parallax.offsetTop) + " Reel: " + (offset - parallax.offsetTop) * 0.5);
+
 });
+
+if (window.innerWidth < 500) {
+
+  window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+    cards.forEach(card => {
+      // console.log(card.offsetTop -500, offset);
+      if (card.offsetTop - 400 < offset) {
+        card.classList.add("active");
+      }
+    })
+    
+  });
+}
+
+
+

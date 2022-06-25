@@ -62,15 +62,17 @@
             transition: opacity, -webkit-transform, .2s ease-in-out;
             cursor: pointer;
         }
-        &:hover button {
-            opacity: 1;
-            pointer-events: auto;
-            transform: translateY(0rem);
-        }
+            &.active button,
+            &:hover button {
+                opacity: 1;
+                pointer-events: auto;
+                transform: translateY(0rem);
+            }
         &:hover {
             box-shadow: 2px 8px 11px 0px #cbcbcb;
             
         }
+        &.active img,
         &:hover img {
             transform: translate(.7rem, .7rem);
         }

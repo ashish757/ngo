@@ -1,11 +1,10 @@
+:root {
+  --min: 13px;
+  --val: 3vw;
+  --max: 16px;
+}
 
-  :root {
-    --min: 10px; 
-    --val: 1vw; 
-    --max: 16px; 
-  }
+html {
+  font-size: clamp(var(--min), var(--val), var(--max));
+}
 
- html {
-    font-size: clamp(var(--min), var(--val), var(--max));
-  }
-  
