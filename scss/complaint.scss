@@ -1,0 +1,39 @@
+@import "./vars";
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+        max-width: 40rem;
+
+        .submit{
+            margin-top: 2rem;
+        }
+    }
+
+}
+
+.inputBox {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #c2bdda;
+    justify-items: start;
+    align-items: center;
+    label {
+        font-size: 1.2rem;
+        color: #2e2c34;
+        font-weight: 500;
+        width: 70rem;
+        flex-shrink: 3;
+    }
+    input, select {
+    width: 100%;
+        border: 1px solid #b1a3d8;
+        padding: 0.3rem  0.6rem;
+        font-size: 1.05rem;
+        background-color: #f2eefe;
+        outline-color: #8570bf;
+    }
+}

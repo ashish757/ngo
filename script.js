@@ -1,13 +1,20 @@
 let navLinks = document.querySelector(".nav-links");
+let navAnchors = navLinks.querySelectorAll(".links li a");
 let menuOpenBtn = document.querySelector(".navbar .navbar-open");
 let menuCloseBtn = document.querySelector(".nav-links .navbar-close");
 
-menuOpenBtn.onclick = function () {
+menuOpenBtn.addEventListener("click", () => {
   navLinks.classList.add("mobActive");
-};
-menuCloseBtn.onclick = function () {
-  navLinks.classList.remove("mobActive");
-};
+});
+
+const closeNav = () => navLinks.classList.remove("mobActive");
+
+menuCloseBtn.addEventListener("click", closeNav);
+navAnchors.forEach((anchor) => {
+  anchor.addEventListener("click", closeNav);
+})
+
+
 
 const hasSubMenus = document.querySelectorAll(".has-submenu");
 

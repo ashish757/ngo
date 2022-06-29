@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<title>lksdhfj</title>
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/complaint.css">
 	<link rel="stylesheet" href="./css/experimental.css">
 	<!-- <link rel="stylesheet" href="./css/hero.css">
 	<link rel="stylesheet" href="./css/footer.css"> -->
@@ -26,58 +27,13 @@
 
 			<div class="nav-links">
 				<ul class="links">
-
 					<div class='navbar-close'>
 						<svg width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-							<path
-								d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+							<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
 						</svg>
 					</div>
-
 					<li><a href="/">HOME</a></li>
 					<li><a href="/">COMPLAINT</a></li>
-
-					<!-- <li class='has-submenu'>
-						<a href="#">HTML & CSS</a>
-						<svg class='arrow' width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-							<path fill-rule="evenodd"
-								d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-						</svg>
-
-						<ul class="sub-menu">
-							<li><a href="#">Web Design</a></li>
-							<li><a href="#">Login Forms</a></li>
-							<li><a href="#">Card Design</a></li>
-							<li class="has-submenu">
-								<span><a href="#">More</a>
-									<svg class='arrow' width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-										<path fill-rule="evenodd"
-											d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-									</svg>
-								</span>
-								<ul class="sub-menu">
-									<li><a href="#">Neumorphism</a></li>
-									<li><a href="#">Pre-loader</a></li>
-									<li><a href="#">Glassmorphism</a></li>
-								</ul>
-							</li>
-						</ul>
-
-					</li>
-					<li class='has-submenu'>
-						<a href="#">JAVASCRIPT</a>
-						<svg class='arrow' width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-							<path fill-rule="evenodd"
-								d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-						</svg>
-						<ul class="sub-menu">
-							<li><a href="#">Dynamic Clock</a></li>
-							<li><a href="#">Form Validation</a></li>
-							<li><a href="#">Card Slider</a></li>
-							<li><a href="#">Complete Website</a></li>
-						</ul>
-					</li> -->
-
 					<li><a href="#aboutUs">ABOUT US</a></li>
 					<li><a href="#contactUs">CONTACT US</a></li>
 				</ul>
@@ -85,14 +41,40 @@
 		</div>
 	</nav>
 
-
-	<div class="hero-image parallax">
-		<div class="hero-center ">
-			<h1 class="title">AGENCY</h1>
-			<p class="subtitle">We'r .......................</p>
-			<button><a href="./aboutUs.html">Explore Us</a></button>
-		</div>
+	<main class="container">
+		<div class="heading">
+			<h1>Heading</h1>
+			</div>
+		<div class='form'>
+		<form>
+			<div class="inputBox">
+				<label>Category</label>
+				<select>
+					<option value="">A</option>
+					<option value="">B</option>
+					<option value="">C</option>
+				</select>
+			</div>
+			<div class="inputBox">
+				<label>Name</label>
+				<input type="text" placeholder="name">
+			</div>
+			<div class="inputBox">
+				<label>E-mail</label>
+				<input type="text" placeholder="e-mail">
+			</div>
+			<div class="inputBox">
+				<label>Phone No.</label>
+				<input type="text" placeholder="phone number">
+			</div>
+			<div class="inputBox">
+				<label>File</label>
+				<input type="file" placeholder="File">
+			</div>
+			<button class="btn submit">Submit</button>
+		</form>
 	</div>
+	</main>
 
 
 
