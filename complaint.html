@@ -23,23 +23,32 @@
 				</svg>
 			</span>
 
-			<div class="logo"><a href="#">NEWWWWW</a></div>
+			<div class="logo">
+				<a href="/ngo">
+					<img src="./img/eSVC.jpg" alt="eSVC"/>
+			</a>
+		</div>
 
 			<div class="nav-links">
 				<ul class="links">
+
 					<div class='navbar-close'>
 						<svg width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-							<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+							<path
+								d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
 						</svg>
 					</div>
-					<li><a href="/">HOME</a></li>
-					<li><a href="/">COMPLAINT</a></li>
+
+					<li><a href="#">HOME</a></li>
+					<li><a href="/ngo/complaint.html">COMPLAINT</a></li>
+
 					<li><a href="#aboutUs">ABOUT US</a></li>
 					<li><a href="#contactUs">CONTACT US</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+
 
 	<main class="container">
 		<div class="heading">
@@ -63,12 +72,30 @@
 				<label>E-mail</label>
 				<input type="text" placeholder="e-mail">
 			</div>
-			<div class="inputBox">
+			<div class="inputBox" style="border-bottom: none;">
 				<label>Phone No.</label>
 				<input type="text" placeholder="phone number">
 			</div>
+			<div class="input-divider">Address</div>
 			<div class="inputBox">
-				<label>File</label>
+				<label>District</label>
+				<input type="text" placeholder="phone number">
+			</div>
+			<div class="inputBox">
+				<label>Pincode</label>
+				<input type="number" placeholder="phone number">
+			</div>
+			<div class="inputBox" style="border-bottom: none;">
+				<label>State</label>
+				<input type="text" placeholder="phone number">
+			</div>
+			<div class="input-divider">Complaint Description</div>
+			<div class="inputBox">
+				<!-- <label>Complaint Description</label> -->
+				<textarea cols="25" rows="10" placeholder="Complaint Description...."></textarea>
+			</div>
+			<div class="inputBox">
+				<label>Upload File</label>
 				<input type="file" placeholder="File">
 			</div>
 			<button class="btn submit">Submit</button>

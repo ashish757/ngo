@@ -2,7 +2,6 @@
 .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     form {
         max-width: 40rem;
@@ -12,6 +11,14 @@
         }
     }
 
+}
+.input-divider {
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: 500;
+    border-bottom: 1px solid #c2bdda;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .inputBox {
@@ -23,12 +30,12 @@
     align-items: center;
     label {
         font-size: 1.2rem;
-        color: #2e2c34;
+        color: #605b6e;
         font-weight: 500;
         width: 70rem;
         flex-shrink: 3;
     }
-    input, select {
+    input, textarea, select {
     width: 100%;
         border: 1px solid #b1a3d8;
         padding: 0.3rem  0.6rem;
@@ -36,4 +43,10 @@
         background-color: #f2eefe;
         outline-color: #8570bf;
     }
+}
+
+@media (max-width: 400px) {
+    // .inputBox {
+    //     flex-wrap: wrap;
+    // }
 }
